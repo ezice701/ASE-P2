@@ -2,88 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BOOSE Project</title>
+    <title>BOOSE Project Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e5e7eb;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #020617;
+            color: #e5e7eb;
         }
 
         header {
             background: #020617;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 10px;
         }
 
         section {
-            padding: 40px;
             max-width: 900px;
             margin: auto;
+            padding: 40px;
         }
 
-        h1, h2 {
-            color: #38bdf8;
-        }
-
-        footer {
-            background: #020617;
-            text-align: center;
-            padding: 15px;
-            color: #94a3b8;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
         }
 
         .card {
             background: #020617;
+            border: 1px solid #1e293b;
             padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #38bdf8;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #38bdf8;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            color: #94a3b8;
+            padding: 20px;
+            border-top: 1px solid #1e293b;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>BOOSE Programming Language</h1>
+    <h1>BOOSE Language Documentation</h1>
     <p>Basic Object Orientated Software Engineering</p>
 </header>
 
 <section>
-    <div class="card">
-        <h2>Project Description</h2>
-        <p>
-            This project implements a custom programming language called BOOSE.
-            It supports variables, arrays, arithmetic operations, drawing commands,
-            methods, loops, and conditionals.
-        </p>
-    </div>
+    <h2>Class Documentation</h2>
 
-    <div class="card">
-        <h2>Features</h2>
-        <ul>
-            <li>Variables (int, real, string)</li>
-            <li>Loops and If Statements</li>
-            <li>Drawing commands (circle, rect, moveto, drawto)</li>
-            <li>Custom Methods</li>
-            <li>Array Support</li>
-        </ul>
-    </div>
+    <div class="grid">
 
-    <div class="card">
-        <h2>Author</h2>
-        <p>Sangam C#</p>
-        <p>Module: Software Engineering</p>
+        <div class="card"><a href="BooseInt.html">BooseInt</a></div>
+        <div class="card"><a href="BooseInttest.html">BooseInt Test</a></div>
+
+        <div class="card"><a href="BooseReal.html">BooseReal</a></div>
+        <div class="card"><a href="BooseRealTest.html">BooseReal Test</a></div>
+
+        <div class="card"><a href="BooseArrayTest.html">BooseArray Test</a></div>
+
+        <div class="card"><a href="BooseMethod.html">BooseMethod</a></div>
+
+        <div class="card"><a href="Command.html">Command</a></div>
+        <div class="card"><a href="CommandFactory.html">CommandFactory</a></div>
+
+        <div class="card"><a href="PenStyle.html">PenStyle</a></div>
+
+        <div class="card"><a href="Program.cs">Program.cs</a></div>
+
     </div>
 </section>
 
 <footer>
-    © 2026 BOOSE Project
+    © 2026 BOOSE Documentation – Sangam C#
 </footer>
 
 </body>
